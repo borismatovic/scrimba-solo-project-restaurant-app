@@ -5,6 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- FONTS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -24,7 +31,7 @@
       <h2>The best burgers and pizzas in town.</h2>
     </header>
     <main>
-      <article class="menu-item">
+      <article class="menu-item-pizza">
         <img class="menu-item-photo" src="./assets/item-pizza.png" />
         <div class="menu-item-single">
           <h3 class="menu-item-title">Pizza</h3>
@@ -33,7 +40,7 @@
         </div>
         <button class="add-item">+</button>
       </article>
-      <article class="menu-item">
+      <article class="menu-item-burger">
         <img class="menu-item-photo" src="./assets/item-burger.png" />
         <div class="menu-item-single">
           <h3 class="menu-item-title">Burger</h3>
@@ -42,7 +49,7 @@
         </div>
         <button class="add-item">+</button>
       </article>
-      <article class="menu-item">
+      <article class="menu-item-beer">
         <img class="menu-item-photo" src="./assets/item-beer.png" />
         <div class="menu-item-single">
           <h3 class="menu-item-title">Beer</h3>
@@ -51,6 +58,28 @@
         </div>
         <button class="add-item">+</button>
       </article>
+      <div class="cart">
+        <h2 class="cart-title">Your order</h2>
+        <h3 class="cart-item-pizza">
+          Pizza x<span class="cart-item-number">1</span
+          ><span class="cart-item-total">$15</span
+          ><i class="fa-solid fa-circle-minus"></i>
+        </h3>
+        <h3 class="cart-item-burger">
+          Burger x<span class="cart-item-number">1</span
+          ><span class="cart-item-total">$15</span
+          ><i class="fa-solid fa-circle-minus"></i>
+        </h3>
+        <h3 class="cart-item-beer">
+          Beer x<span class="cart-item-number">1</span
+          ><span class="cart-item-total">$15</span
+          ><i class="fa-solid fa-circle-minus"></i>
+        </h3>
+        <div class="total-price">
+          <h2 class="total-price-title">Total price:</h2>
+          <button class="submit-order">Complete order</button>
+        </div>
+      </div>
     </main>
   </body>
 </html>
